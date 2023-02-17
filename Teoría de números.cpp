@@ -57,6 +57,9 @@ bool esPrimo(int p) {
     if (p % x == 0) {
       cnt++;
     }
+    if (p % (p / x) == 0) {
+      cnt++;
+    }
     if (cnt > 2) {
       break;
     }
